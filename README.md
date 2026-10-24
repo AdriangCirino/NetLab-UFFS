@@ -1,4 +1,4 @@
-# NetLab UFFS · Versão 4 · Três laboratórios
+# NetLab UFFS 
 
 Jornada educativa com **três missões obrigatórias e sequenciais**, usando React, React Flow e Vite. Não há servidor, cadastro ou ranking.
 
@@ -8,10 +8,6 @@ Jornada educativa com **três missões obrigatórias e sequenciais**, usando Rea
 npm install
 npm run dev
 ```
-
-Abra a URL indicada no terminal, normalmente `http://localhost:5173`.
-
-Para visualizar do celular na mesma rede Wi-Fi que o PC, abra no telefone o endereço de rede (`Network`) mostrado pelo Vite. Talvez seja necessário permitir acesso no firewall do Windows.
 
 ## Testes e produção
 
@@ -49,13 +45,10 @@ Após a vitória, os cabos ficam travados, **a topologia permanece visível** e 
 - `src/App.jsx`: interface, navegação entre etapas, cronômetro e animação.
 - `src/styles.css`: tema UFFS e bancada multicolorida.
 
-## Publicação
 
-Execute `npm run build` e publique o diretório `dist` via GitHub Pages. O `vite.config.js` usa base relativa (`./`), útil para projetos publicados em subdiretórios.
 
 ## Observações didáticas
 
 - A primeira missão usa uma resposta simulada de um serviço na Internet: em redes reais, alcançar a Internet não é por si só suficiente para demonstrar que uma aplicação respondeu.
 - DNS **informa o endereço IP**, não encaminha o tráfego até o servidor do jogo. Por isso o DNS e o servidor são ramificações independentes da Internet Global.
 - A simulação não reproduz protocolos reais nem a infraestrutura interna do WhatsApp. Cabos na bancada representam relações de conectividade simplificadas, não necessariamente o meio físico exato.
-- A imagem institucional da UFFS é carregada pela internet e existe fallback textual `UFFS` para situações offline. Verifique as regras de identidade visual ao publicar oficialmente.
